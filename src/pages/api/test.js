@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 const config = {
   headers: {
-    Authorization: 'Bearer ' + process.env.OPENAI_API_KEY,
+    Authorization: 'Bearer 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',
   },
 };
 
