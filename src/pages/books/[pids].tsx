@@ -71,7 +71,7 @@ function MyVerticallyCenteredModal({ show, onHide, bookId }) {
                     <Carousel activeIndex={index} onSelect={handleSelect} fade>
                         {book && book.pages.length > 0 && (
                             book.pages.map((item, index) => (
-                                <Carousel.Item interval={100000}>
+                                <Carousel.Item key={index + item} interval={100000}>
                                     <img className="img-fluid" src={item} alt={index} key={index + item} />
 
                                 </Carousel.Item>
